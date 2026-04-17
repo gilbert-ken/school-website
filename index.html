@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<script>
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}, 3000);
+</script>
+<head>
+    <title>alinda preapatory shool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<amarquee>for a bright future</amarquee>
+<header>
+    <nav>
+        <h2>ALINDA PREPARATORY SCHOOL-KANARA</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="academics.html">Academics</a>
+            <a href="contact.html">Contact</a>
+            <a href="admission.html">Admission</a>
+        </div>
+    </nav>
+</header>
+<div class="slider">
+    <img src="images/school1.jpg" class="slide active">
+    <img src="images/school2.jpg" class="slide">
+    <img src="images/school3.jpg" class="slide">
+</div>
+<section class="cards">
+    <div class="card">
+        <h3>Qualified Teachers</h3>
+        <p>Experienced and caring staff for every child.</p>
+    </div>
+
+    <div class="card">
+        <h3>Modern Facilities</h3>
+        <p>Well-equipped classrooms and playgrounds.</p>
+    </div>
+
+    <div class="card">
+        <h3>Holistic Learning</h3>
+        <p>Academics, sports, and creativity combined.</p>
+    </div>
+</section><div class="container">
+    <div class="card">
+        <h2>About Us</h2>
+        <p>We provide quality education in a safe and supportive environment.</p>
+    </div>
+
+    <div class="card">
+        <h2>Latest News</h2>
+        <p>📌 Term 2 begins May 5th</p>
+        <p>📌 Sports Day coming soon</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Bright Future Primary School</p>
+</footer>
+
+</body>
+</html>
