@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+}
+
+/* NAVBAR */
+header {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form input, .form textarea, .form select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form button {
+    background: #004080;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('https://images.unsplash.com/photo-1588072432836-e10032774350');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* CONTENT */
+.container {
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* FADE IN */
+.card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide.active {
+    opacity: 1;
+}
